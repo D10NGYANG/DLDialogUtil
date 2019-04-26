@@ -6,6 +6,7 @@ import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.hss01248.dialog.R;
 import com.hss01248.dialog.Tool;

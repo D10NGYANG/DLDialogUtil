@@ -111,7 +111,11 @@ public class MaterialDialogHolder extends SuperLvHolder<ConfigBean> {
                 @Override
                 public void onClick(View v) {
                     if(bean.type == DefaultConfig.TYPE_MD_INPUT){
-                        boolean isvalid = bean.listener.onInputValid(mdInputHolder.getTxt1(),mdInputHolder.getTxt2(),mdInputHolder.getEt1(),mdInputHolder.getEt2());
+                        boolean isvalid = bean.listener.onInputValid(mdInputHolder.getTxt1(),
+                                mdInputHolder.getTxt2(),
+                                mdInputHolder.getEt1(),
+                                mdInputHolder.getEt2(),
+                                message);
                         if(!isvalid){
                             return;
                         }

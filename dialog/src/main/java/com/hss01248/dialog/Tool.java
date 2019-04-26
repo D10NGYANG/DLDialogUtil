@@ -296,7 +296,11 @@ public class Tool {
                 public void onClick(View v) {
                     if(bean.type == DefaultConfig.TYPE_MD_INPUT){
                         MdInputHolder holder = (MdInputHolder) bean.viewHolder;
-                        boolean isvalid = bean.listener.onInputValid(holder.getTxt1(),holder.getTxt2(),holder.getEt1(),holder.getEt2());
+                        boolean isvalid = bean.listener.onInputValid(holder.getTxt1(),
+                                holder.getTxt2(),
+                                holder.getEt1(),
+                                holder.getEt2(),
+                                null);
                         if(!isvalid){
                             return;
                         }

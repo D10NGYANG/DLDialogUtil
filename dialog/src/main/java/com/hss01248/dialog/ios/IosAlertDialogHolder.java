@@ -142,7 +142,9 @@ public class IosAlertDialogHolder extends SuperLvHolder<ConfigBean> {
             public void onClick(View view) {
 
                 if(bean.type == DefaultConfig.TYPE_IOS_INPUT){
-                  boolean  needDismiss =  bean.listener.onInputValid(et1.getText().toString().trim(),et2.getText().toString().trim(),et1,et2);
+                  boolean  needDismiss =  bean.listener.onInputValid(et1.getText().toString().trim(),
+                          et2.getText().toString().trim(),
+                          et1, et2, tvMsg);
                   if(!needDismiss){
                       return;
                   }
@@ -178,7 +180,9 @@ public class IosAlertDialogHolder extends SuperLvHolder<ConfigBean> {
             public void onClick(View view) {
 
                 if(bean.type == DefaultConfig.TYPE_IOS_INPUT){
-                    boolean  needDismiss =  bean.listener.onInputValid(et1.getText().toString().trim(),et2.getText().toString().trim(),et1,et2);
+                    boolean  needDismiss =  bean.listener.onInputValid(et1.getText().toString().trim(),
+                            et2.getText().toString().trim(),
+                            et1, et2, tvMsg);
                     if(!needDismiss){
                         return;
                     }
