@@ -540,9 +540,9 @@ public class Tool {
 
 
     private static void setDim(ConfigBean bean) {
-        if(bean.type == DefaultConfig.TYPE_IOS_LOADING){//转菊花,则让背景透明
+        /*if(bean.type == DefaultConfig.TYPE_IOS_LOADING){//转菊花,则让背景透明
             bean.isTransparentBehind = true;
-        }
+        }*/
         if (bean.alertDialog!= null){
            if(bean.isTransparentBehind){
                bean.alertDialog.getWindow().setDimAmount(0);
